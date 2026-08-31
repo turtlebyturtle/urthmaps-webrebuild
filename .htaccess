@@ -5,4 +5,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
 # Redirect old links
-Redirect /cartography/Images/TEP_MAIN.png /maps/exports/main.png
+Redirect 301 /cartography/Images/TEP_MAIN.png /maps/exports/main.png
