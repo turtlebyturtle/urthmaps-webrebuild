@@ -1,6 +1,8 @@
-#remove html file extension https://example.com/page.html
-# to https://example.com/page
+# Replace html file extension https://example.com/page.html with https://example.com/page
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+# Redirect old links
+Redirect /cartography/Images/TEP_MAIN.png /maps/exports/main.png
